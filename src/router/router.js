@@ -1,9 +1,14 @@
-import Home from '../views/Home'
+import Home from '@/views/Home'
 
 export default [
   {
     path: '/',
-    name: 'home',
+    name: 'Home',
     component: Home
+  },
+  {
+    path: '/city',
+    name: 'City',
+    component: () => import('@/views/City')
   }
 ]

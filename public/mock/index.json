@@ -1,0 +1,102 @@
+{
+  "ret": true,
+  "data": {
+    "swiperImageList": [
+      {
+        "id": "001",
+        "imgUrl": "/images/swiper1.jpg"
+      },
+      {
+        "id": "002",
+        "imgUrl": "/images/swiper2.jpg"
+      }
+    ],
+    "iconList": [
+      {
+        "id": "001",
+        "iconUrl": "/images/hotel.png",
+        "desc": "酒店"
+      },
+      {
+        "id": "002",
+        "iconUrl": "/images/flight.png",
+        "desc": "机票"
+      },
+      {
+        "id": "003",
+        "iconUrl": "/images/group.png",
+        "desc": "度假"
+      },
+      {
+        "id": "004",
+        "iconUrl": "/images/train.png",
+        "desc": "火车票"
+      },
+      {
+        "id": "005",
+        "iconUrl": "/images/piao.png",
+        "desc": "景点门票"
+      },
+      {
+        "id": "006",
+        "iconUrl": "/images/innBnb.png",
+        "desc": "民宿客栈"
+      },
+      {
+        "id": "007",
+        "iconUrl": "/images/bargainflight.png",
+        "desc": "低价机票"
+      },
+      {
+        "id": "008",
+        "iconUrl": "/images/package.png",
+        "desc": "特惠酒店"
+      },
+      {
+        "id": "009",
+        "iconUrl": "/images/package.png",
+        "desc": "随便加的"
+      }
+    ],
+    "recommendList": [
+      {
+        "id": "001",
+        "imgUrl": "/images/recommend1.jpg",
+        "tittle": "大连圣亚海洋世界",
+        "desc": "浪漫大连首站，浪漫的海洋主题乐园"
+      },
+      {
+        "id": "002",
+        "imgUrl": "/images/recommend1.jpg",
+        "tittle": "大连圣亚海洋世界",
+        "desc": "浪漫大连首站，浪漫的海洋主题乐园"
+      },
+      {
+        "id": "003",
+        "imgUrl": "/images/recommend1.jpg",
+        "tittle": "大连圣亚海洋世界",
+        "desc": "浪漫大连首站，浪漫的海洋主题乐园"
+      }
+    ],
+    "weekendList": [
+      {
+        "id": "001",
+        "imgUrl": "/images/recommend1.jpg",
+        "tittle": "大连圣亚海洋世界",
+        "desc": "浪漫大连首站，浪漫的海洋主题乐园"
+      },
+      {
+        "id": "002",
+        "imgUrl": "/images/recommend1.jpg",
+        "tittle": "大连圣亚海洋世界",
+        "desc": "浪漫大连首站，浪漫的海洋主题乐园"
+      },
+      {
+        "id": "003",
+        "imgUrl": "/images/recommend1.jpg",
+        "tittle": "大连圣亚海洋世界",
+        "desc": "浪漫大连首站，浪漫的海洋主题乐园"
+      }
+    ]
+  }
+}
