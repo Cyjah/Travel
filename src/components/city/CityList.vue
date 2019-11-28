@@ -5,41 +5,23 @@
       <div class="tittle border-topbottom">当前城市</div>
       <div class="button-list">
         <div class="button-wrapper">
-          <div class="button">北京</div>
+          <div class="button">{{ this.$store.state.city }}</div>
         </div>
       </div>
     </div>
     <div class="area">
       <div class="tittle border-topbottom">热门城市</div>
       <div class="button-list">
-        <div class="button-wrapper">
-          <div class="button">北京</div>
+        <div class="button-wrapper" v-for="item of hotCities" :key="item.id" @click="handleCityClick(item.name)">
+          <div class="button">{{ item.name }}</div>
         </div>
       </div>
     </div>
-    <div class="area">
-      <div class="tittle border-topbottom">A</div>
+    <div class="area" v-for="(item,key) of cities" :key="key" :ref="key">
+      <div class="tittle border-topbottom">{{ key }}</div>
       <div class="item-list">
-        <ul>
-          <li class="item border-topbottom">阿拉尔</li>
-          <li class="item border-topbottom">阿拉尔</li>
-          <li class="item border-topbottom">阿拉尔</li>
-          <li class="item border-topbottom">阿拉尔</li>
-          <li class="item border-topbottom">阿拉尔</li>
-          <li class="item border-topbottom">阿拉尔</li>
-        </ul>
-      </div>
-    </div>
-    <div class="area">
-      <div class="tittle border-topbottom">A</div>
-      <div class="item-list">
-        <ul>
-          <li class="item border-topbottom">阿拉尔</li>
-          <li class="item border-topbottom">阿拉尔</li>
-          <li class="item border-topbottom">阿拉尔</li>
-          <li class="item border-topbottom">阿拉尔</li>
-          <li class="item border-topbottom">阿拉尔</li>
-          <li class="item border-topbottom">阿拉尔</li>
+        <ul v-for="innerItem of item" :key="innerItem.id">
+          <li class="item border-topbottom" @click="handleCityClick(innerItem.name)">{{ innerItem.name }}</li>
         </ul>
       </div>
     </div>
@@ -51,8 +33,27 @@
 import BScroll from 'better-scroll'
 export default {
   name: 'CityList',
+  props: {
+    cities: Object,
+    hotCities: Array,
+    letter: String
+  },
+  methods: {
+    handleCityClick (city) {
+      this.$store.commit('changeCity', city)
+      this.$router.push('/')
+    }
+  },
   mounted () {
     this.scroll = new BScroll(this.$refs.wrapper)
+  },
+  watch: {
+    letter () {
+      if (this.letter) {
+        const element = this.$refs[this.letter][0]
+        this.scroll.scrollToElement(element)
+      }
+    }
   }
 }
 </script>
