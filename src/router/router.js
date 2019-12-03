@@ -1,4 +1,4 @@
-import Home from '@/views/Home'
+import Home from '@/views/Home/Home'
 
 export default [
   {
@@ -9,6 +9,11 @@ export default [
   {
     path: '/city',
     name: 'City',
-    component: () => import('@/views/City')
+    component: () => import('@/views/City/City')
+  },
+  {
+    path: '/detail/:id',
+    name: 'Detail',
+    component: () => import('@/views/Detail/Detail')
   }
 ]

@@ -9,11 +9,11 @@
 </template>
 
 <script>
-import HomeHeader from '@/components/home/HomeHeader'
-import HomeSwiper from '@/components/home/HomeSwiper'
-import HomeIcons from '@/components/home/HomeIcons'
-import HomeRecommend from '@/components/home/HomeRecommend'
-import HomeWeekend from '@/components/home/HomeWeekend'
+import HomeHeader from '@/views/Home/Child/HomeHeader'
+import HomeSwiper from '@/views/Home/Child/HomeSwiper'
+import HomeIcons from '@/views/Home/Child/HomeIcons'
+import HomeRecommend from '@/views/Home/Child/HomeRecommend'
+import HomeWeekend from '@/views/Home/Child/HomeWeekend'
 import axios from 'axios'
 import { mapState } from 'vuex'
 
