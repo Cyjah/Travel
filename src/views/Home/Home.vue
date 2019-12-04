@@ -31,7 +31,7 @@ export default {
   },
   methods: {
     getHomeInfo () {
-      axios.get('/api/mock/index.json?city=' + this.city).then(this.getHomeInfoSucc).catch(error => console.log(error))
+      axios.get('/api/mock/index.json?city=' + this.city).then(this.getHomeInfoSucc)
     },
     getHomeInfoSucc (res) {
       res = res.data.data
